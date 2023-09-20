@@ -1,0 +1,258 @@
+/* Estilo Fuente*/
+@font-face {
+    font-family:Soft Elegance;
+    src: url("../font/Soft Elegance.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family:Soft Elegance;
+    src: url("../font/Roboto-Medium.ttf");
+    font-style: normal;
+    font-weight: normal;
+}  
+/* Estilo para la imagen */
+container-products {
+    display: flex;
+   margin: 10px 20px;
+    text-align: center;
+  }
+
+  .list-card image{
+    width: 100px;
+    height: auto;
+  }
+  .list-card:hover{
+    border:1px solid #1bbeb4 ;
+  }
+
+
+
+  /* Estilo Del Logo*/
+
+ header{
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilo del cuadro de Torta*/
+  .container-title{
+    text-align: center;/* Central */
+    padding: 60px;
+    background-color: rgb(250, 179, 212);/* Color de cuadro */
+    margin-bottom: 50px;
+      /*Tipo Font*/
+    font-family:Soft Elegance;
+    /*Color Font*/
+    color: rgb(255, 255, 255);
+        /*Tamaño Font*/
+    font-size: 50px;
+  }
+       /*Poner acostado de la torta*/
+  main{
+    display: flex;
+    gap: 30px; 
+    margin-bottom:80px;
+  }
+  /*La imagen*/
+  .container-img{
+    background-color: rgb(265, 255, 255);/* Fondo de imagen */
+    flex: 1;
+    text-align: center;/* Central */
+  }
+  /*Producto-botones*/
+  .container-infor-product{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-price{
+    padding-bottom: 20px;
+    border-bottom: 1px solid;/*Linea*/
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+
+  .container-price span{
+    font-size: 24px;
+    font-weight: 300;
+  }
+.container-details-product{
+    padding: 30px 0;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+/*OPCIONES DE CAKE*/
+.form-group label{
+    width: 100px;/*Espacio de sabor y relleno*/
+    color:rgb(77, 76, 84);/*color de sabor y relleno*/
+    font-family:Roboto Lt;/*Fuente de letra*/  
+}
+/*TERMINA OPCIONES DE CAKE*/
+
+
+/*ESCOGER UNA OPCION */
+.form-group select{
+    width: 300px;
+    border-color: blueviolet;/*color del borde cuadro*/
+    
+    padding: 12px 15px;
+    background-color: rgb(255, 255, 255);/*color del cuadro*/
+    outline:none ;/*para que permanezca todo los colores del border al elegir una opcion*/
+    color: rgb(77, 76, 84);/*color de letra*/
+}
+/*TERMINAR UNA OPCION */
+
+/*BOTON LIMPIAR */
+.btn-clean{
+    border:none;
+    background:none;
+    color:rgb(0, 0, 0);
+    margin-left: 120px;
+    cursor: pointer;
+}
+.btn-clean:hover{
+    color: blueviolet;
+}
+/*TERMINAR BOTON LIMPIAR */
+
+/*Añadir Carrito*/
+.container-add-cart{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.container-quantity{
+    position: relative;
+}
+.input-quantity{
+    background-color: #f7f7f7;
+    border: none;
+    padding: 5px;
+    width: 60px;
+    height: 100px;
+    color: #666;
+    font-weight: 500;
+}
+.input-quantity:focus{
+    outline: none;
+}
+.input-quantity::-webkit-inner-spin-button,
+.input-quantity::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.btn-increment-decrement{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+.btn-increment-decrement i{
+    font-size: 11px;
+    color:#666;
+    cursor: pointer;
+}
+.fa-chevon-down:hover{
+    color: aqua;
+}
+.fa-chevon-up:hover{
+    color: aqua;
+}
+.btn-add-to-cart{
+    border: none;
+    background-color:blueviolet;
+    padding:  10px;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+.btn-add-to-cart:hover{
+    color: rgb(0, 0, 0);
+    background-color:#666;
+}
+.container-social{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid #e4e4e4;
+}
+.container-social span{
+    font-weight: 300;
+    color: #252525;
+}
+.container-buttons-social{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.container-buttons-social a:link,
+.container-buttons-social a:visited{
+    color: #666;
+    font-size: 15px;
+}
+.container-buttons-social a:hover{
+    color: #1bbeb4;
+}
+
+.container-related-products h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-list-products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.card{
+    cursor: pointer;
+}
+.card-img{
+background: transparent;
+margin-bottom: 15px;
+}
+.card-img img{
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0,0.2);
+}
+.infor-card{
+    display: flex;
+    justify-content: space-between;
+}
+.text-product{
+    color: #252525;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.tex-product h3:hover{
+   color: #1bbeb4
+}
+.text-product p{
+    color: #666;
+    font-size: 13px; 
+
+    .text-product p :hover{
+        color: #1bbeb4;
+    }
+}
+footer{
+    padding: 30px;
+    background-color: #eee;
+    margin-top: 50px;
+    color: #222;
+}

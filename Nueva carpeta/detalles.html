@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/detalles.js">
+    <link rel="stylesheet" href="css/estilo detalle.css">
+    <link rel="shorcut icon" href="image/logo.png">
+
+    <title>MISKY CAKE</title>
+</head>
+<body>
+    <!--Aqui se encuentra el Logo-->
+    <header>
+        <h1><img src="image/logo_t.png" width="100px"></h1>
+    </header>
+    <!--Aqui termina el Logo-->
+
+      <!--Aqui Comienza la img-->
+    <div class="container-title">Aesthetic</div>
+    <main>
+        <div class="container-img">
+            <img src="image/aesthettic.png" width="350px">
+        </div>
+         <!--Aqui termina la img-->
+
+         
+        <div
+         class="container-infor-product">
+         <div class="container-price">
+            <span>50.00</span>
+            <i class="fa-solid fa-chevron-right"></i>
+         </div>
+         <!--Inicio Container Detall product-->
+         <div class="container-details-product">
+            <div class="form-group">
+                <label for="flavor">Opciones de Cake</label>
+                <select name="flavor" id="flavor">
+                    <option disabled selected value="">Escoge una opción</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="Plátano">Plátano</option>
+                    </div>
+                </select>
+            </div>
+            <!--Inicio Form Group-->
+            <div class="form-group">
+                <label for="flavor">Opciones de Relleno</label>
+                <select name="flavor" id="flavor">
+                    <option disabled selected value="">Escoge una opción</option>
+                    <option value="Manjar blanco">Manjar blanco</option>
+                    <option value="Cream cheese">Cream cheese</option>
+                    <option value="Buttercleam">Buttercleam</option>
+                </select>
+            </div>
+            <button class="btn-clean">Limpiar</button>
+            <!--Finalizar Container Detall product-->
+         </div>
+
+         <div class="container-add-cart">
+            <div class="container-quantity">
+                <input type="number" 
+                placeholder="1" 
+                value="1" 
+                min="1"
+                class="input-quantity"/>
+                 <div class="btn-increment-decrement">
+                    <i class="bi bi-chevron-up" id="increment"></i>
+                    <i class="bi bi-chevron-down" id="decrement"></i>
+                    
+                 </div>
+            </div>
+            <button class="btn-add-to-cart">
+                <i class="fa-solid fa-plus"></i>
+                Añadir carrito
+            </button>
+                </div>
+                <div class="container-social">
+                    <span>Compartir</span>
+                    <div class="container-buttons-social">
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+            </div>
+         </div>
+        </div>
+    </main>
+    
+    <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <!--Baby Shower-->
+        <div class="Fila">
+            <div class="list-card">
+                <div class="card">
+                    <div class="card">
+                        <img src="image/baby _shower.png" alt="producto-2" class="container-products">
+                        <div class="info">
+                            <div class="text-product">
+                                <h1>Torta Baby Shower</h1>
+                                <p class="precio">560</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <!--Burtterfly-->
+        <div class="list-card">
+            <div class="card">
+                <div class="card">
+                    <img src="image/burtterfly.png" alt="producto-3" class="container-products">
+                    <div class="info">
+                        <div class="text-product">
+                            <h1>Torta Burtterfly</h1>
+                            <p class="precio">140</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!--Cartoon-->
+        <div class="list-card">
+            <div class="card">
+                <div class="card">
+                    <img src="image/cartoon.png" alt="producto-3" class="container-products">
+                    <div class="info">
+                        <div class="text-product">
+                            <h1>Torta Burtterfly</h1>
+                            <p class="precio">350</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+        <footer>
+            <p>footer</p>
+        </footer>
+</body>
+</html>
